@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Fill out the form below to complete your registration.</h1>
+<form method="post" asp-action="RegistrationResult">
+<div class="column">
+      <div class="row">
+      <label for="FirstName">First Name:</label>
+      <input type="text" id="FirstName" name="FirstName" pattern="\b([A-ZÀ-ÿ][a-z]*)+" placeholder="John" required />
+      <p>&nbsp;</p>
+      <label for="Lastname">Last Name:</label>
+      <input type="text" id="LastName" name="LastName" pattern="\b([A-ZÀ-ÿ][a-z]*)+" placeholder="Doe" required />
+      <p>&nbsp;</p>
+      <label for="Email">Email:</label>
+      <input type="text" id="Email" name="Email" pattern="^[a-zA-Z0-9+_.-]+@@[a-zA-Z0-9.-]+$" placeholder="name@example.com" required />
+      <p>&nbsp;</p>
+       <label for="Password">Password:</label>
+    <input type="password" id="Password" name="Password" placeholder="password" required ) />
+    <p>&nbsp;</p>
+    <label for="FavCoffee">Choose your favorite coffee:</label>
+
+<select name="FavCoffee" id="FavCoffee" required>
+   <option value="" disabled selected hidden>Choose a Coffee</option>
+  <option value="Black">Black</option>
+  <option value="Decaf">Decaf</option>
+  <option value="Espresso">Espresso</option>
+  <option value="Capuccino">Cappuccino</option>
+  <option value="Mocha Latte">Mocha Latte</option>
+  <option value="Frappe">Frappe</option>
+</select>
+<p>&nbsp;</p>
+
+    <input type="submit" />
+      </div>
+</div>
+</form>
